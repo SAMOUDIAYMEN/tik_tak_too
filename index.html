@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .xo{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-color:rgb(6, 180, 157);
+            transform: translate(-50% , -50%);
+            height: 60vh;
+            width: 50vw;
+            border-radius: 2em;
+        }
+        .center{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+        }
+        .row{
+            display: flex;
+        }
+        .box{
+            height: 15vh;
+            width: 15vw;
+            background-color: white;
+            border: 5px solid rgb(6, 180, 157);
+            text-align: center;
+            font-size: 6em;
+            color:  rgb(6, 180, 157);
+            cursor: pointer;
+        }
+        .cl1{
+            border-left: none;
+        }
+        .cl3{
+            border-right: none;
+        }
+        .top{
+            border-top: none;
+        }
+        .buttom{
+            border-bottom: none;
+        }
+        #btnsbmt{
+            position: absolute;
+            left: 50%;
+            bottom: 0%;
+            background-color:rgb(6, 180, 157);
+            color: white;
+            transform: translate(-50% , 107%);
+            padding: 1em 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="xo">
+        <div class="center">
+            <div class="row">
+                <div id="n1" onclick="n1();" class="cl1 top box"></div>
+                <div id="n2" onclick="n2();" class="cl2 top box"></div>
+                <div id="n3" onclick="n3();" class="cl3 top box"></div>
+            </div>
+            <div class="row">
+                <div id="n4" onclick="n4();" class="cl1 box"></div>
+                <div id="n5" onclick="n5();" class="cl2 box"></div>
+                <div id="n6" onclick="n6();" class="cl3 box"></div>
+            </div>
+            <div class="row">
+                <div id="n7" onclick="n7();" class="cl1 buttom box"></div>
+                <div id="n8" onclick="n8();" class="cl2 buttom box"></div>
+                <div id="n9" onclick="n9();" class="cl3 buttom box"></div>
+            </div>
+            <div class="row">
+                <button id="btnsbmt" onclick="window.location.reload();">clear</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var xo;
+        var cont = 1;
+        function n1(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n1").textContent = xo;
+        }
+        function n2(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n2").textContent = xo;
+           
+        }
+        function n3(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n3").textContent = xo;
+            
+        }
+        function n4(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n4").textContent = xo;
+            
+        }
+        function n5(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n5").textContent = xo;
+            
+        }
+        function n6(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n6").textContent = xo;
+            
+        }
+        function n7(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n7").textContent = xo;
+            
+        }
+        function n8(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n8").textContent = xo;
+            
+        }
+        function n9(){
+            if(cont == 1 || cont == 3 || cont == 5 ||cont == 7 || cont == 9){
+                xo = "X";
+            }else{
+                xo = "O"
+            }
+            cont++;
+            document.getElementById("n9").textContent = xo;
+            
+        }
+    </script>
+</body>
+</html>
